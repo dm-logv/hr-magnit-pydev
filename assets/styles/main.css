@@ -1,0 +1,10 @@
+.main ul {
+    font-size: 1.3em;
+    list-style-position: inside;
+    list-style-type: lower-greek;
+    margin-left: 1em;
+}
+
+.main ul li {
+    margin-bottom: 1em;
+}

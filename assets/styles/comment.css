@@ -1,0 +1,101 @@
+@-moz-keyframes verify-fail {
+    0% {
+        left: -.5em;
+    }
+    60% {
+        left: .5em;
+    }
+    90% {
+        left: 0;
+    }
+}
+@keyframes verify-fail {
+    0% {
+        left: -.5em;
+    }
+    60% {
+        left: .5em;
+    }
+    90% {
+        left: 0;
+    }
+}
+
+.comment {
+    margin: auto;
+}
+.comment-form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.comment-form > label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+.comment-form label span {
+    display: block;
+    flex: 1 0 30%;
+    font-weight: bold;
+    line-height: 2em;
+    margin-right: 1em;
+    text-align: right;
+}
+.comment-form label input,
+.comment-form label select,
+.comment-form label textarea {
+    border: 1px solid #ccc;
+    border-radius: .2em;
+    display: block;
+    flex: 1 0 auto;
+    padding: .5em;
+    width: 60%;
+}
+
+/* Required fields */
+.comment-form label input[required]:not(.verify-pass),
+.comment-form label select[required]:not(.verify-pass),
+.comment-form label textarea[required]:not(.verify-pass) {
+    background-color: #ffd;
+}
+
+/* Current field */
+.comment-form label input:focus,
+.comment-form label select:focus,
+.comment-form label textarea:focus{
+    box-shadow: 0 0 0px 1px #03a;
+    outline: 0;
+}
+
+/* Failed field leaving */
+.comment-form label input.verify-fail:not(:focus),
+.comment-form label select.verify-fail:not(:focus),
+.comment-form label textarea.verify-fail:not(:focus){
+    animation: verify-fail .1s;
+    box-shadow: 0 0 0px 1px #f00;
+    position: relative;
+}
+.comment-form label textarea {
+    min-height: 20em;
+    overflow: auto;
+    resize: vertical;
+}
+.comment-form input[type="submit"] {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: .2em;
+    margin: 2em auto 0 auto;
+    padding: .5em 1em;
+    width: 10em;
+}
+.comment-form input[type="submit"]:hover {
+    background-color: #eee;
+}
+.comment-form input[type="submit"]:active {
+    box-shadow: inset 2px 2px 6px 3px #ccc;
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+

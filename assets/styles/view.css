@@ -1,0 +1,25 @@
+.page-wrapper {
+    width: 90vw;
+}
+
+.view {}
+
+.view figcaption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.view table {
+    border: 1px solid #fff;
+    table-layout: fixed;
+    width: 100%;
+}
+.view thead {
+    font-weight: bold;
+}
+.view td,
+.view th {
+    border: 1px solid #fff;
+    padding: .3em .7em;
+    word-break: break-all;
+}

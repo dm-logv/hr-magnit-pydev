@@ -1,0 +1,4 @@
+<tr>
+    <td><a href="stat/${object_id}">${object_name}</a></td>
+    <td>${object_count}</td>
+</tr>

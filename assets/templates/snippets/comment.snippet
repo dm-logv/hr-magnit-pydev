@@ -1,0 +1,68 @@
+<section class="comment">
+    <form class="comment-form" action="/comment/addComment/" method="POST">
+        <label class="comment-form__last-name">
+            <span>Фамилия:</span>
+            <input type="text"
+                   name="last-name"
+                   placeholder="Астафьев"
+                   autofocus required/>
+        </label>
+
+        <label class="comment-form__first-name">
+            <span>Имя:</span>
+            <input
+                    type="text"
+                    name="first-name"
+                    placeholder="Никодим"
+                    required/>
+        </label>
+
+        <label class="comment-form__patronymic">
+            <span>Отчество:</span>
+            <input type="text"
+                   name="patronymic"
+                   placeholder="Порфирьевич"/>
+        </label>
+
+        <label class="comment-form__region">
+            <span>Регион:</span>
+            <select name="region"
+                    required >
+                <option selected disabled>Выберите регион</option>
+                ${regions_list}
+            </select>
+        </label>
+
+        <label class="comment-form__city">
+            <span>Город:</span>
+            <select name="city"
+                    required >
+            </select>
+        </label>
+
+        <label class="comment-form__phone">
+            <span>Контактный телефон:</span>
+            <input type="text"
+                   name="phone"
+                   pattern="^\(\d{3}\) \d{3}\-\d{2}\-\d{2}$"
+                   placeholder="(861) 210-98-10" />
+        </label>
+
+        <label class="comment-form__email">
+            <span>Email:</span>
+            <input type="email"
+                   name="email"
+                   pattern="^[^@]+@[^@]+$"
+                   placeholder="info@magnit.ru"/>
+        </label>
+
+        <label class="comment-form__comment">
+            <span>Комментарий:</span>
+            <textarea name="comment"
+                      placeholder="Добрый день!"
+                      required value="" ></textarea>
+        </label>
+
+        <input type="submit" value="Отправить" />
+    </form>
+</section>

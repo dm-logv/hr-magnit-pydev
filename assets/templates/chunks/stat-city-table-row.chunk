@@ -1,0 +1,4 @@
+<tr>
+    <td>${object_name}</td>
+    <td>${object_count}</td>
+</tr>

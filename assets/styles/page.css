@@ -1,0 +1,48 @@
+body {
+    background-color: #ddf;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 2em;
+}
+
+.info-tip {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0px #ddd;
+    display: block;
+    left: 25vw;
+    padding: 1em 2em;
+    position: fixed;
+    text-align: center;
+    top: -1000em;
+    width: 50vw;
+}
+    .info-tip .fail,
+    .info-tip .success {
+        top: 2em;
+    }
+    .info-tip.fail {
+        background-color: #fed;
+        border: 1px solid #f64;
+    }
+    .info-tip.success {
+        background-color: #dfe;
+        border: 1px solid #4f6;
+    }
+
+
+.page-wrapper {
+    border: 1px solid #fff;
+    height: auto;
+    margin: auto;
+    overflow-x: hidden;
+    padding: 3em;
+    width: 60vw;
+}
+    .main-header {
+        border-bottom: 1px solid #fff;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 2em;
+        padding: 0 0 1em 0;
+    }

@@ -1,0 +1,11 @@
+<tr>
+    <td>${last_name}</td>
+    <td>${first_name}</td>
+    <td>${patronymic}</td>
+    <td>${region_name}</td>
+    <td>${city_name}</td>
+    <td>${phone}</td>
+    <td>${email}</td>
+    <td>${comment}</td>
+    <td><a href="view/removeComment/${comment_id}" data-action="true">Удалить</a></td>
+</tr>

@@ -1,0 +1,21 @@
+.stat {}
+.stat figure {
+    margin-bottom: 2em;
+}
+.stat figcaption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.stat table {
+    border: 1px solid #fff;
+    width: 100%;
+}
+.stat thead {
+    font-weight: bold;
+}
+.stat td,
+.stat th {
+    border: 1px solid #fff;
+    padding: .3em .7em
+}
